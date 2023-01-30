@@ -2,8 +2,8 @@ const rows= Array.from(document.querySelectorAll('tr'));
 const inputsArray=Array.from(document.querySelectorAll('input'))
 const inputs=document.querySelectorAll('input')
 const btn=document.querySelector('button');
-const factors=document.querySelectorAll('factor');
-
+const allResult=[];
+const allfactors=[]
 // update the input values when changes are made
 inputs.forEach((input,index)=>{
     input.addEventListener('change',(e)=>{
@@ -32,8 +32,13 @@ function calcGrade(){
           })
           const sumOffGrades=notesPersCell.reduce((a,b)=>Number(a)+Number(b),0)
           if (!sumOffGrades)return
-         resultCellForRow.textContent = ( ((sumOffGrades / notesPersCell.length)*0.75) + activityNote*0.25 ) *factor
+         resultCellForRow.textContent = ( ((sumOffGrades / notesPersCell.length)*0.75) + activityNote*0.25 ) *factor;
+         allResult.push(resultCellForRow.textContent)
+         allfactors.push(factor)
+         console.log(factor)
+         
         })
-
-  
+        document.querySelector('h1').textContent=allResult.reduce((a,b)=>Number(a)+Number(b),0)  / allfactors.reduce((a,b)=>Number(a)+Number(b),0)
 }
+
+
