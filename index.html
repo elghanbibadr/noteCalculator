@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        table, tr,th, td ,input{
+          border: 1px solid black;
+          border-collapse: collapse;
+          /* padding: 5px; */
+          width: 60px;
+        }
+
+        @media screen and (min-width: 768px) {
+            tr,th, td ,input{
+                width: 100px;
+            }
+        }
+
+        table{
+            max-width: 1000px !important;
+        }
+        input{
+            border: none;
+        }
+      </style>
+<body>
+      
+      <table>
+        <tr >
+          <th>Matiere</th>
+          <th>Factor</th>
+          <th>exam 1</th>
+          <th>exam2</th>
+          <th>exam3</th>
+          <th>exam4</th>
+          <th>activity</th>
+          <th>result for matiere</th>
+          
+        </tr>
+        <!-- ENGLISH -->
+        <tr >
+            <td>English</td>
+            <td ><input class="factor" type="number" /></td>
+            <td><input class="note" type="number"  /></td>
+            <td><input class="note" type="number"  /></td>
+            <td><input class="note" type="number"  /></td>
+            <td><input class="note" type="number"  /></td>
+            <td><input class="noteActivity" type="number"  /></td>
+            <td class="result"></td>
+        </tr>
+        <!-- ARABIC -->
+        <tr >
+            <td>arabic</td>
+            <td ><input class="factor" type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="noteActivity"  type="number"  /></td>
+            <td class="result"></td>
+        </tr>
+        <!-- fr
+        <tr >
+            <td>fr</td>
+            <td ><input class="factor" type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="noteActivity"  type="number"  /></td>
+            <td class="result"></td>
+        </tr> -->
+        <!-- histoire -->
+        <tr >
+            <td>Histore</td>
+            <td ><input class="factor" type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="noteActivity"  type="number"  /></td>
+            <td class="result"></td>
+        </tr>
+        <!-- MATH-->
+        <tr >
+            <td>MATH</td>
+            <td ><input class="factor" type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="noteActivity"  type="number"  /></td>
+            <td class="result"></td>
+        </tr>
+        <!-- ISLAMIC -->
+        <tr >
+            <td>islamic</td>
+            <td ><input class="factor" type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="noteActivity"  type="number"  /></td>
+            <td class="result"></td>
+        </tr>
+       
+        <!-- PHILO -->
+        <tr >
+            <td>philo</td>
+            <td ><input   class="factor" type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="note"  type="number"  /></td>
+            <td><input class="noteActivity"  type="number"  /></td>
+            <td class="result"></td>
+        </tr>
+        <!-- BEHAVIOR -->
+        <tr class="behaviorRow">
+            <td>behavior</td>
+            <td ><input class="factor" type="number"  /></td>
+            <td><input class="note"   type="number"  /></td>
+            <td><input class="note"   type="number"  /></td>
+            <td><input class="note"   type="number"  /></td>
+            <td><input class="note"   type="number"  /></td>
+            <td><input class="noteActivity"   type="number"  /></td>
+            <td class="result"></td>
+        </tr>
+        
+      </table>
+      <button>calc grade</button>
+      <h1>note is :</h1>
+      <script src="/index.js"></script>
+</body>
+</html>
